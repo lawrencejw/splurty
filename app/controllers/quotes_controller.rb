@@ -1,4 +1,6 @@
 class QuotesController < ApplicationController
-  def index
+def index
+  @quote = Quote.order("RANDOM()").first
+end
   end
 end
